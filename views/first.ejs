@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- <link rel="icon" href="images/favicon.ico"> -->
+
+<link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h2><bold>Submit Your Code</bold></h2>
+                <p class="blue-text"></p>
+                <div class="card">
+                    <form class="form-card" action="/first" method="post" >
+                      <div class="row align-items-center text-left d-flex pt-4 pb-3">
+                        <div class="col-md-3 ps-5">
+        
+                          <p class="mb-0">Username:</p>
+        
+                        </div>
+                        <div class="col-md-9 pe-5">
+                          <div class="input-group">
+                            <input type="text" class="form-control"  name="username"  aria-label="Text input with dropdown button" required />
+        
+                          </div>
+        
+                        </div>
+                      </div>
+
+                     
+                      <div class="row align-items-center text-left d-flex pt-4 pb-3">
+                        <div class="col-md-3 ps-5">
+        
+                          <p class="mb-0">Language:</p>
+        
+                        </div>
+                        <div class="col-md-9 pe-5">
+        
+        
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="input-1" name="language" value="" aria-label="Text input with dropdown button" required>
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                              <div class="dropdown-menu">
+                                <option class="dropdown-item drop-1" value="C++">C++</option>
+                                <option class="dropdown-item drop-1" value="Java">Java</option>
+                                <option class="dropdown-item drop-1" value="Python">Python</option>
+                                <option class="dropdown-item drop-1" value="Javascript">Javascript</option>
+                                
+        
+        
+        
+        
+                              </div>
+                            </div>
+                          </div>
+        
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center text-left d-flex pt-4 pb-3">
+                        <div class="col-md-3 ps-5">
+        
+                          <p class="mb-0">Stdin:</p>
+    
+                        </div>
+                        <div class="col-md-9 pe-5">
+                          <div class="input-group">
+                            <textarea id="" name="stdin" rows="" cols="100" required></textarea>
+                          </div>
+        
+                        </div>
+                      </div> 
+                      <div class="row align-items-center text-left d-flex pt-4 pb-3">
+                        <div class="col-md-3 ps-5">
+        
+                          <p class="mb-0">Source Code:</p>
+        
+                        </div>
+                        <div class="col-md-9 pe-5">
+                          <div class="input-group">
+                            <textarea id="" name="code" rows="5" cols="100" required></textarea>
+                          </div>
+        
+                        </div>
+                      </div>  
+                        
+                        <div class="row justify-content-center">
+                          <div class="form-group col-sm-4"> <button type="submit" name="submit" value="submit" class="btn-block btn-lg btn-success">Submit Code</button> </div>                          
+                        </div>
+                    </form>
+                    <form action="\first" method="post">
+                      <div class="row justify-content-center">
+                        <div class="form-group col-sm-4 "> <button type="submit" name="view" value="view" class="btn-block btn-primary">View all submissions</button> </div>                        
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/detail.js" charset="utf-8"></script>
+</body>
+</html>

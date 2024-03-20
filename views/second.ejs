@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <link rel="icon" href="images/favicon.ico"> -->
+
+<link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Username</th>
+            <th scope="col">Language</th>
+            <th scope="col">stdin</th>
+            <th scope="col">Code</th>
+            <th scope="col">Timestamp</th>
+          </tr>
+        </thead>
+        <tbody>
+           <%result.forEach((data)=>{%>
+            <tr>
+                <td scope="row"><%=data.username%></td>
+                <td><%=data.language%></td>
+                <td><%=data.stdin%></td>
+                <td><pre><%=data.code.substring(0,100)%><p class="more-text"><%=data.code.substring(100)%></p>
+                <a class="more-less" href="#">Read More</a></pre></td>
+                <td><%=data.timestamp%></td>
+            </tr>
+           <%})%>
+         
+        
+        </tbody>
+      </table>
+      <script src="scripts/detail.js" charset="utf-8"></script>
+  </body>
+</html>
